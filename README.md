@@ -49,7 +49,7 @@ Add numbers:
 
 Add special characters
 <div align="center">
-<img src="assets/images/specialcharacters.JPG" alt="Ask if the user want to add special characters" width="50%">
+<img src="assets/images/specialcharactors.JPG" alt="Ask if the user want to add special characters" width="50%">
 </br>
 </div>
 </br>
@@ -66,6 +66,25 @@ Add special characters
 </br>
 </br>
 
+* If the user entered an invalid value for password length, an alarm will appear.
+
+<div align="center">
+<img src="assets/images/invalidlength.JPG" alt="Alart for invalid password length" width="50%">
+</br>
+</div>
+</br>
+</br>
+</br>
+
+* If the user choose "No" (cancel) for all criterias, an alarm will appear and the function will terminate.
+
+<div align="center">
+<img src="assets/images/invalidpassword.JPG" alt="Alart for invalid password criteria" width="50%">
+</br>
+</div>
+</br>
+</br>
+</br>
 
 
 ## The objectives are accomplished! Yay! 
@@ -73,6 +92,6 @@ Add special characters
 
 ## Installation
 
-The project was uploaded to a [github](https://github.com/) repository. You can get access from [here](https://github.com/RicenUdonLover/Moulde2_Challenge_Lian_Liu).
+The project was uploaded to a [github](https://github.com/) repository. You can get access from [here](https://github.com/RicenUdonLover/Module3_Challenge_Lian_Liu.git).
 </br>
 You can also see the deployed webpage [over here](https://ricenudonlover.github.io/Moulde2_Challenge_Lian_Liu/).
