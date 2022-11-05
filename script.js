@@ -1,15 +1,15 @@
 // Assignment code here
 
-const lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-const upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-const numerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-const specialCharacters = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '+', '-', '.', '~', '|', '<', '>', '=', '-', '_', '/', ':', ';', '?', '[', ']', '{', '}', '~'];
+// const lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+// const upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+// const numerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+// const specialCharacters = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '+', '-', '.', '~', '|', '<', '>', '=', '-', '_', '/', ':', ';', '?', '[', ']', '{', '}', '~'];
 
 // --------------------------Tried different ways to present the password pool and generate ramdom characters--------------------------------------------------------------------
-// const lowerCase = "abcdefghijklmnopqrstuvwxyz"
-// const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-// const numerals = "0123456789"
-// const specialCharacters = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+const lowerCase = "abcdefghijklmnopqrstuvwxyz"
+const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const numerals = "0123456789"
+const specialCharacters = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
 // var rdmLowercase = Math.floor(Math.random() * lowerCase.length);
 // var rdmUppercase = Math.floor(Math.random() * upperCase.length);
 // var rdmNumerals = Math.floor(Math.random() * numerals.length);
@@ -29,7 +29,8 @@ const specialCharacters = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '+'
 var rdmCharacter = function (finalPassword, passwordLength, checking, array, range) {
   if (checking === true && finalPassword.length < passwordLength) {
     var selectRandom = Math.floor(Math.random() * range);
-    finalPassword = finalPassword + array[selectRandom];
+    // Both of the two ways of claming password pool work for this. If using an array then use "array[selectRandom]""
+    finalPassword = finalPassword + array.charAt(selectRandom);
   }
   return finalPassword;
 }
