@@ -56,7 +56,7 @@ Add special characters
 </br>
 </br>
 
-* The password was generated. It contains all selected characters.
+* The password was generated. It contains all selected characters. (The password is also copied to the clipboard as a bonus ;) )
 
 <div align="center">
 <img src="assets/images/password.JPG" alt="Generated password" width="50%">
@@ -94,4 +94,4 @@ Add special characters
 
 The project was uploaded to a [github](https://github.com/) repository. You can get access from [here](https://github.com/RicenUdonLover/Module3_Challenge_Lian_Liu.git).
 </br>
-You can also see the deployed webpage [over here](https://ricenudonlover.github.io/Moulde2_Challenge_Lian_Liu/).
+You can also see the deployed webpage [over here](https://ricenudonlover.github.io/Module3_Challenge_Lian_Liu/).
