@@ -30,7 +30,7 @@ var rdmCharacter = function (finalPassword, passwordLength, checking, array, ran
   if (checking === true && finalPassword.length < passwordLength) {
     var selectRandom = Math.floor(Math.random() * range);
     // Both of the two ways of claming password pool work for this. If using an array then use "array[selectRandom]""
-    finalPassword = finalPassword + array.charAt(selectRandom);
+    finalPassword += array.charAt(selectRandom);
   }
   return finalPassword;
 }
@@ -81,6 +81,8 @@ var generatePassword = function () {
     finalPassword = rdmCharacter(finalPassword, passwordLength, symbolConfirm, specialCharacters, specialCharacters.length)
 
     console.log(finalPassword)
+    // shuffle the password to make it more random
+    var shuffled = finalPassword.split('').sort(function(){return 0.5-Math.random()}).join('');
     // -------------------------------------------Random things. I tried to check for invalid passwords and use while loop to re-generate a password and it turns out to be very stupid.
     // var numberValid = password.match(numbers)
     // console.log(numberValid)
@@ -110,7 +112,7 @@ var generatePassword = function () {
     // }
     // ----------------------------------------------------------------------------------------------------
   }
-  return finalPassword
+  return shuffled
 }
 
 // Get references to the #generate element
